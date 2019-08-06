@@ -67,7 +67,7 @@ export default class SocketEnhancer {
    */
   enhanceServerSocket(serverSocket) {
     const timestamp = epochSeconds()
-    this.log("◀︎ New socket %s from %s", serverSocket.id, serverSocket.handshake.address)
+    this.log("◀︎ New socket %s from %s", serverSocket.id, serverSocket.conn.transport.socket?._socket?.remoteAddress || serverSocket.handshake.address)
     serverSocket.on("*", packet => {
       const [eventName, ...payload] = packet.data
       this.log("◀︎ %s [%s] %s", serverSocket.id, eventName, payload.join(" "))
