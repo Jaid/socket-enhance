@@ -81,7 +81,7 @@ export default class SocketEnhancer {
       serverSocketEmit.apply(serverSocket, args)
     }
     serverSocket.on("disconnect", () => {
-      this.log("Socket %s disconnected after %s seconds", serverSocket.id, epochSeconds() - timestamp)
+      this.log("Socket %s disconnected after %s seconds", serverSocket.id, epochSeconds(timestamp))
     })
   }
 
