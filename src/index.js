@@ -1,7 +1,10 @@
 /** @module socket-enhance */
 
+import {isObject} from "util"
+
 import socketioWildcard from "socketio-wildcard"
 import epochSeconds from "epoch-seconds"
+import {isString, isFunction, isBuffer, isNumber, isArrayLike} from "lodash"
 
 /**
  * @typedef {Object} JaidLoggerLike
@@ -42,6 +45,32 @@ export default class SocketEnhancer {
     }
   }
 
+  static formatPayload(payload) {
+    if (isBuffer(payload)) {
+      return `Buffer[${payload.length}]`
+    }
+    if (isNumber(payload)) {
+      return payload
+    }
+    if (isString(payload)) {
+      if (payload.length > 24) {
+        return `${payload.substr(0, 12)}…${payload.substr(-12)}`
+      } else {
+        return payload
+      }
+    }
+    if (isArrayLike(payload)) {
+      return `Array[${payload.length}]`
+    }
+    if (isFunction(payload)) {
+      return "function"
+    }
+    if (isObject(payload)) {
+      return `Object[${Object.keys(payload).length}]`
+    }
+    return payload
+  }
+
   /**
    * @return {import("socketio-wildcard").default}
    */
@@ -70,13 +99,13 @@ export default class SocketEnhancer {
     this.log("◀︎ New socket %s from %s", serverSocket.id, serverSocket.conn.transport.socket?._socket?.remoteAddress || serverSocket.handshake.address)
     serverSocket.on("*", packet => {
       const [eventName, ...payload] = packet.data
-      this.log("◀︎ %s [%s] %s", serverSocket.id, eventName, payload.join(" "))
+      this.log("◀︎ %s [%s] %s", serverSocket.id, eventName, payload.map(SocketEnhancer.formatPayload).join(" "))
     })
     const serverSocketEmit = serverSocket.emit
     serverSocket.emit = (...args) => {
       const [eventName, ...payload] = args
       if (!["disconnecting", "disconnect"].includes(eventName)) {
-        this.log("▶︎ %s [%s] %s", serverSocket.id, eventName, payload.join(" "))
+        this.log("▶︎ %s [%s] %s", serverSocket.id, eventName, payload.map(SocketEnhancer.formatPayload).join(" "))
       }
       serverSocketEmit.apply(serverSocket, args)
     }

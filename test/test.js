@@ -23,7 +23,7 @@ it("should run", async () => {
     server.client = socket
     socket.on("hey", name => {
       logger.info("I am %s!", name)
-      socket.emit("howdy", "🤠", "🐎")
+      socket.emit("howdy", "🤠", "🐎", () => {})
     })
   })
   server.listen(44911)
