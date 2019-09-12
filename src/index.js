@@ -3,7 +3,7 @@
 import {isObject} from "util"
 
 import socketioWildcard from "socketio-wildcard"
-import epochSeconds from "epoch-seconds"
+import readableMs from "readable-ms"
 import {isString, isFunction, isBuffer, isNumber, isArrayLike} from "lodash"
 
 /**
@@ -95,7 +95,7 @@ export default class SocketEnhancer {
    * @param {import("socket.io").Socket} serverSocket
    */
   enhanceServerSocket(serverSocket) {
-    const timestamp = epochSeconds()
+    const timestamp = Date.now()
     this.log("◀︎ New socket %s from %s", serverSocket.id, serverSocket.conn.transport.socket?._socket?.remoteAddress || serverSocket.handshake.address)
     serverSocket.on("*", packet => {
       const [eventName, ...payload] = packet.data
@@ -110,7 +110,7 @@ export default class SocketEnhancer {
       serverSocketEmit.apply(serverSocket, args)
     }
     serverSocket.on("disconnect", () => {
-      this.log("Socket %s disconnected after %s seconds", serverSocket.id, epochSeconds(timestamp))
+      this.log("Socket %s disconnected after %s", serverSocket.id, readableMs(Date.now() - timestamp))
     })
   }
 
