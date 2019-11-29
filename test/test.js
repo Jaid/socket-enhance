@@ -13,7 +13,7 @@ const indexModule = (process.env.MAIN ? path.resolve(process.env.MAIN) : path.jo
  */
 const {default: SocketEnhancer} = indexModule
 
-it("should run", async () => {
+it("should run", async callback => {
   let communicationWorks = false
   const logger = jaidLogger(`${_PKG_NAME}-test`)
   const enhancer = new SocketEnhancer({logger})
@@ -33,7 +33,7 @@ it("should run", async () => {
   })
   client.emit("hey", "you", Buffer.from("abc"))
   await delay(ms`3 seconds`)
-  client.close()
-  server.close()
   expect(communicationWorks).toBe(true)
+  client.close()
+  server.close(callback)
 }, ms`10 seconds`)
