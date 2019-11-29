@@ -3,27 +3,27 @@
   "version": "1.1.1",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
-    "@babel/runtime": "^7.6.0",
+    "@babel/runtime": "^7.7.4",
     "emit-promise": "^3.1.0",
     "lodash": "^4.17.15",
-    "readable-ms": "^1.0.0",
+    "readable-ms": "^2.0.1",
     "socketio-wildcard": "^2.0.0"
   },
   "devDependencies": {
-    "acorn": "^7.0.0",
+    "acorn": "^7.1.0",
     "babel-jest": "^24.9.0",
-    "babel-preset-jaid": "^6.10.0",
+    "babel-preset-jaid": "^6.11.1",
     "browserslist-config-jaid-universal": "^2.1.0",
     "delay": "^4.3.0",
-    "eslint": "^6.4.0",
-    "eslint-config-jaid": "^1.32.0",
+    "eslint": "^6.7.1",
+    "eslint-config-jaid": "^1.37.0",
     "jaid-logger": "^1.5.3",
     "jest": "^24.9.0",
     "rimraf": "^3.0.0",
-    "socket.io": "^2.2.0",
-    "socket.io-client": "^2.2.0",
-    "webpack": "^4.40.2",
-    "webpack-config-jaid": "^5.27.9"
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "webpack": "^4.41.2",
+    "webpack-config-jaid": "^5.29.1"
   },
   "scripts": {
     "clean": "rimraf dist/",
