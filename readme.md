@@ -3,6 +3,15 @@
 
 Adds utility functions to socket.io instance objects.
 
+## Installation
+<a href='https://npmjs.com/package/socket-enhance'><img alt='npm logo' src='https://raw.githubusercontent.com/npm/logos/master/npm%20logo/npm-logo-red.png' height=16/></a>
+```bash
+npm install --save socket-enhance@^
+```
+<a href='https://yarnpkg.com/package/socket-enhance'><img alt='Yarn logo' src='https://raw.githubusercontent.com/yarnpkg/assets/master/yarn-kitten-full.png' height=24/></a>
+```bash
+yarn add socket-enhance@^
+```
 
 
 ## Try it out
