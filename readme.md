@@ -1,14 +1,32 @@
 # socket-enhance
 
 
-Adds utility functions to socket.io instance objects.
+<a href="https://raw.githubusercontent.com/Jaid/socket-enhance/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/socket-enhance?style=flat-square" alt="License"/></a>  
+<a href="https://actions-badge.atrox.dev/Jaid/socket-enhance/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2FJaid%2Fsocket-enhance%2Fbadge" alt="Build status"/></a> <a href="https://github.com/Jaid/socket-enhance/commits"><img src="https://img.shields.io/github/commits-since/Jaid/socket-enhance/v1.1.3?style=flat-square&logo=github" alt="Commits since v1.1.3"/></a> <a href="https://github.com/Jaid/socket-enhance/commits"><img src="https://img.shields.io/github/last-commit/Jaid/socket-enhance?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/Jaid/socket-enhance/issues"><img src="https://img.shields.io/github/issues/Jaid/socket-enhance?style=flat-square&logo=github" alt="Issues"/></a>  
+<a href="https://npmjs.com/package/socket-enhance"><img src="https://img.shields.io/npm/v/socket-enhance?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/Jaid/socket-enhance/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/socket-enhance?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/socket-enhance"><img src="https://img.shields.io/npm/dm/socket-enhance?style=flat-square&logo=npm" alt="Downloads"/></a>
+
+**Adds utility functions to socket.io instance objects.**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Installation
-<a href='https://npmjs.com/package/socket-enhance'><img alt='npm logo' src='https://github.com/Jaid/action-readme/raw/master/images/base-assets/npm.png'/></a>
+<a href="https://npmjs.com/package/socket-enhance"><img src="https://img.shields.io/badge/npm-socket--enhance-C23039?style=flat-square&logo=npm" alt="socket-enhance on npm"/></a>
 ```bash
 npm install --save socket-enhance@^1.1.3
 ```
-<a href='https://yarnpkg.com/package/socket-enhance'><img alt='Yarn logo' src='https://github.com/Jaid/action-readme/raw/master/images/base-assets/yarn.png'/></a>
+<a href="https://yarnpkg.com/package/socket-enhance"><img src="https://img.shields.io/badge/Yarn-socket--enhance-2F8CB7?style=flat-square&logo=yarn&logoColor=white" alt="socket-enhance on Yarn"/></a>
 ```bash
 yarn add socket-enhance@^1.1.3
 ```
@@ -16,11 +34,35 @@ yarn add socket-enhance@^1.1.3
 
 
 
+
+
+
+
+## Development
+
+
+
+Setting up:
+```bash
+git clone git@github.com:Jaid/socket-enhance.git
+cd socket-enhance
+npm install
+```
+Testing:
+```bash
+npm run test:dev
+```
+Testing in production environment:
+```bash
+npm run test
+```
+
+
 ## License
 ```text
 MIT License
 
-Copyright © 2019, Jaid <jaid.jsx@gmail.com> (github.com/jaid)
+Copyright © 2020, Jaid <jaid.jsx@gmail.com> (github.com/jaid)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
