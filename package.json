@@ -39,5 +39,6 @@
     "prepareActionJest": "npm run build:prod"
   },
   "name": "socket-enhance",
-  "description": "Adds utility functions to socket.io instance objects."
+  "description": "Adds utility functions to socket.io instance objects.",
+  "funding": "https://github.com/sponsors/jaid"
 }
