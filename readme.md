@@ -1,9 +1,9 @@
 # socket-enhance
 
 
-<a href="https://raw.githubusercontent.com/Jaid/socket-enhance/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/socket-enhance?style=flat-square" alt="License"/></a>  
-<a href="https://actions-badge.atrox.dev/Jaid/socket-enhance/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2FJaid%2Fsocket-enhance%2Fbadge" alt="Build status"/></a> <a href="https://github.com/Jaid/socket-enhance/commits"><img src="https://img.shields.io/github/commits-since/Jaid/socket-enhance/v1.1.3?style=flat-square&logo=github" alt="Commits since v1.1.3"/></a> <a href="https://github.com/Jaid/socket-enhance/commits"><img src="https://img.shields.io/github/last-commit/Jaid/socket-enhance?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/Jaid/socket-enhance/issues"><img src="https://img.shields.io/github/issues/Jaid/socket-enhance?style=flat-square&logo=github" alt="Issues"/></a>  
-<a href="https://npmjs.com/package/socket-enhance"><img src="https://img.shields.io/npm/v/socket-enhance?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/Jaid/socket-enhance/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/socket-enhance?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/socket-enhance"><img src="https://img.shields.io/npm/dm/socket-enhance?style=flat-square&logo=npm" alt="Downloads"/></a>
+<a href="https://raw.githubusercontent.com/jaid/socket-enhance/master/license.txt"><img src="https://img.shields.io/github/license/jaid/socket-enhance?style=flat-square" alt="License"/></a> <a href="https://github.com/sponsors/jaid"><img src="https://img.shields.io/badge/<3-Sponsor-FF45F1?style=flat-square" alt="Sponsor socket-enhance"/></a>
+<a href="https://actions-badge.atrox.dev/jaid/socket-enhance/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2Fjaid%2Fsocket-enhance%2Fbadge" alt="Build status"/></a> <a href="https://github.com/jaid/socket-enhance/commits"><img src="https://img.shields.io/github/commits-since/jaid/socket-enhance/v1.1.3?style=flat-square&logo=github" alt="Commits since v1.1.3"/></a> <a href="https://github.com/jaid/socket-enhance/commits"><img src="https://img.shields.io/github/last-commit/jaid/socket-enhance?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/jaid/socket-enhance/issues"><img src="https://img.shields.io/github/issues/jaid/socket-enhance?style=flat-square&logo=github" alt="Issues"/></a>  
+<a href="https://npmjs.com/package/socket-enhance"><img src="https://img.shields.io/npm/v/socket-enhance?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/jaid/socket-enhance/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/socket-enhance?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/socket-enhance"><img src="https://img.shields.io/npm/dm/socket-enhance?style=flat-square&logo=npm" alt="Downloads"/></a>
 
 **Adds utility functions to socket.io instance objects.**
 
@@ -37,14 +37,13 @@ yarn add socket-enhance@^1.1.3
 
 
 
-
 ## Development
 
 
 
 Setting up:
 ```bash
-git clone git@github.com:Jaid/socket-enhance.git
+git clone git@github.com:jaid/socket-enhance.git
 cd socket-enhance
 npm install
 ```
