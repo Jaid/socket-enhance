@@ -40,5 +40,9 @@
   },
   "name": "socket-enhance",
   "description": "Adds utility functions to socket.io instance objects.",
-  "funding": "https://github.com/sponsors/jaid"
+  "funding": "https://github.com/sponsors/jaid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaid/socket-enhance"
+  }
 }
