@@ -44,5 +44,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jaid/socket-enhance"
-  }
+  },
+  "homepage": "https://github.com/Jaid/socket-enhance",
+  "keywords": []
 }
